@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Menu">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/mn_home"
+                android:icon="@drawable/ic_home_color_32"
+                android:title="@string/home_screen" />
+
+            <item
+                android:id="@+id/mn_allocation"
+                android:icon="@drawable/ic_sheet_color_32"
+                android:title="@string/allocation" />
+
+            <item
+                android:id="@+id/mn_statistic"
+                android:icon="@drawable/ic_statistic_color_32"
+                android:title="@string/statistic" />
+
+            <item
+                android:id="@+id/mn_staft_manager"
+                android:icon="@drawable/ic_people_color_32"
+                android:title="@string/staft" />
+
+            <item
+                android:id="@+id/mn_department_manager"
+                android:icon="@drawable/ic_desktop_color_32"
+                android:title="@string/department" />
+
+            <item
+                android:id="@+id/mn_stationary_management"
+                android:icon="@drawable/ic_printer_color_32"
+                android:title="@string/stationery" />
+
+            <item
+                android:id="@+id/mn_role_manager"
+                android:icon="@drawable/ic_task_color_32"
+                android:title="@string/role" />
+
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="App">
+        <menu>
+
+            <item
+                android:id="@+id/mn_language"
+                android:icon="@drawable/ic_book_color_32"
+                android:title="@string/language" />
+
+            <item
+                android:id="@+id/mn_contact"
+                android:icon="@drawable/ic_book_color_32"
+                android:title="@string/contact" />
+
+            <item
+                android:id="@+id/mn_infor"
+                android:icon="@drawable/ic_information_color_32"
+                android:title="@string/information" />
+        </menu>
+    </item>
+
+
+    </menu>

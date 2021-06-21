@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/color_grey_background"
+    android:layout_height="match_parent"
+    tools:context=".presentation.activity.NewProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        <include layout="@layout/toolbar"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            style="@style/area_layout_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="150dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_height="120dp">
+
+                            <ImageView
+                                android:id="@+id/iv_activity_new_product_photo"
+                                android:layout_width="match_parent"
+                                android:src="@drawable/ic_picture_blue_48"
+                                android:layout_height="match_parent"/>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <TextView
+                            android:id="@+id/tv_activity_new_product_name_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:maxLines="1"
+                            android:text="@string/name_of_product"
+                            android:textSize="22sp"
+                            android:textColor="@color/color_blue_mac_os"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:layout_marginTop="20sp"
+                        android:orientation="vertical">
+
+
+                        <!-- Tên Sản Phẩm  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name_of_product"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/color_black"
+                                android:textSize="20sp"/>
+
+                            <EditText
+                                android:id="@+id/edt_activity_new_product_name_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:nextFocusDown="@+id/edt_activity_new_product_unit_product"
+                                android:maxLines="1"
+                                android:drawableLeft="@drawable/ic_box_color_24"
+                                android:drawablePadding="3dp"
+                                android:background="@drawable/state_background_text_box_white"
+                                android:hint="@string/enter_name_of_product"/>
+
+                        </LinearLayout>
+
+
+                        <!-- Đơn vi tính -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/unit"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/color_black"
+                                android:textSize="20sp"/>
+
+                            <EditText
+                                android:id="@+id/edt_activity_new_product_unit_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:imeOptions="actionNext"
+                                android:inputType="text"
+                                android:nextFocusDown="@+id/edt_activity_new_product_number"
+                                android:drawableLeft="@drawable/ic_unit_color_24"
+                                android:drawablePadding="3dp"
+                                android:background="@drawable/state_background_text_box_white"
+                                android:hint="@string/enter_unit"/>
+
+                        </LinearLayout>
+
+
+                        <!-- Số lượng -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/number"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/color_black"
+                                android:textSize="20sp"/>
+
+                            <EditText
+                                android:id="@+id/edt_activity_new_product_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:nextFocusDown="@+id/edt_activity_new_product_price"
+                                android:maxLines="1"
+                                android:drawableLeft="@drawable/ic_number_color_24"
+                                android:drawablePadding="3dp"
+                                android:background="@drawable/state_background_text_box_white"
+                                android:hint="@string/enter_amount"/>
+
+                        </LinearLayout>
+
+                        <!-- Đơn giá -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/price"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/color_black"
+                                android:textSize="20sp"/>
+
+                            <EditText
+                                android:id="@+id/edt_activity_new_product_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:imeOptions="actionNext"
+                                android:inputType="numberDecimal"
+                                android:nextFocusDown="@+id/edt_activity_new_product_note"
+                                android:drawableLeft="@drawable/ic_price_color_24"
+                                android:drawablePadding="3dp"
+                                android:background="@drawable/state_background_text_box_white"
+                                android:hint="@string/enter_price"/>
+
+                        </LinearLayout>
+
+                        <!-- Ghi chú -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/note"
+                                android:layout_marginBottom="5dp"
+                                android:textColor="@color/color_black"
+                                android:textSize="20sp"/>
+
+                            <EditText
+                                android:id="@+id/edt_activity_new_product_note"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:drawableLeft="@drawable/ic_note_line_24"
+                                android:drawablePadding="3dp"
+                                android:background="@drawable/state_background_text_box_white"
+                                android:hint="@string/enter_note"/>
+
+                        </LinearLayout>
+
+
+                        <!-- Button -->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <com.ttn.stationarymanagement.presentation.custom_view.MButtonActionBlue
+                                android:id="@+id/btn_activity_new_product_done"
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dp"
+                                android:text="@string/save"/>
+
+                        </LinearLayout>
+
+
+                        <!-- Padding -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:orientation="vertical"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

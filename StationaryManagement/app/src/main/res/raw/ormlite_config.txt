@@ -1,0 +1,157 @@
+#
+# generated on 2020/07/09 01:31:14
+#
+# --table-start--
+dataClass=com.ttn.stationarymanagement.data.local.model.VaiTro
+tableName=VaiTro
+# --table-fields-start--
+# --field-start--
+fieldName=MaVT
+columnName=MaVT
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=TenVaiTro
+# --field-end--
+# --field-start--
+fieldName=NgayTao
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.ttn.stationarymanagement.data.local.model.PhongBan
+tableName=PhongBan
+# --table-fields-start--
+# --field-start--
+fieldName=MaPB
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=TenPB
+# --field-end--
+# --field-start--
+fieldName=NgayTao
+# --field-end--
+# --field-start--
+fieldName=GhiChu
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.ttn.stationarymanagement.data.local.model.VanPhongPham
+tableName=VanPhongPham
+# --table-fields-start--
+# --field-start--
+fieldName=MaVPP
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=TenSP
+# --field-end--
+# --field-start--
+fieldName=DonVi
+# --field-end--
+# --field-start--
+fieldName=SoLuong
+# --field-end--
+# --field-start--
+fieldName=DonGia
+# --field-end--
+# --field-start--
+fieldName=NgayTao
+# --field-end--
+# --field-start--
+fieldName=NgayTD
+# --field-end--
+# --field-start--
+fieldName=GhiChu
+# --field-end--
+# --field-start--
+fieldName=Anh
+# --field-end--
+# --field-start--
+fieldName=DaDung
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.ttn.stationarymanagement.data.local.model.NhanVien
+tableName=NhanVien
+# --table-fields-start--
+# --field-start--
+fieldName=MaNV
+columnName=MaNV
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=TenNV
+# --field-end--
+# --field-start--
+fieldName=GT
+# --field-end--
+# --field-start--
+fieldName=NgaySinh
+# --field-end--
+# --field-start--
+fieldName=SDT
+# --field-end--
+# --field-start--
+fieldName=Email
+# --field-end--
+# --field-start--
+fieldName=NgayTao
+# --field-end--
+# --field-start--
+fieldName=MaPB
+# --field-end--
+# --field-start--
+fieldName=MaVT
+# --field-end--
+# --field-start--
+fieldName=GhiChu
+# --field-end--
+# --field-start--
+fieldName=Anh
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.ttn.stationarymanagement.data.local.model.CapPhat
+tableName=CapPhat
+# --table-fields-start--
+# --field-start--
+fieldName=MaPhieu
+columnName=MaPhieu
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=MaVPP
+# --field-end--
+# --field-start--
+fieldName=MaNV
+# --field-end--
+# --field-start--
+fieldName=NgayCap
+# --field-end--
+# --field-start--
+fieldName=SoLuong
+# --field-end--
+# --field-start--
+fieldName=NgayTD
+# --field-end--
+# --field-start--
+fieldName=TrangThai
+# --field-end--
+# --field-start--
+fieldName=GhiChu
+# --field-end--
+# --field-start--
+fieldName=TongGia
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

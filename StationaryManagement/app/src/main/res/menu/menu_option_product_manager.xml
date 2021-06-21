@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/mn_edit_product"
+        android:orderInCategory="100"
+        android:title="@string/edit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mn_import_product"
+        android:orderInCategory="100"
+        android:title="@string/import_product"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mn_delete_product"
+        android:orderInCategory="100"
+        android:title="@string/delete_product"
+        app:showAsAction="never" />
+</menu>
